@@ -29,6 +29,6 @@ module.exports = (sequelize, Sequelize) => {
       allowNull: true,
     },
   });
-  User.sync({ force: true });
+  // User.sync({ force: true });
   return User;
 };
