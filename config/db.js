@@ -49,6 +49,10 @@ db.Sequelize = Sequelize;
 //mysql model
 
 //user related
-db.user = require("../src/users/model")(sequelize, Sequelize);
+db.user = require("../src/users/user.model")(sequelize, Sequelize);
+db.userProfile = require("../src/users/userProfile.model")(
+  sequelize,
+  Sequelize,
+);
 
 module.exports = db;
